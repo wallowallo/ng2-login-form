@@ -4,10 +4,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { SignUpComponent } from './app.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 @NgModule({
   declarations: [
-    SignUpComponent
+    SignUpComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
