@@ -2,14 +2,14 @@
   Sign up:
 </h1>
 
-<form (ngSubmit)="onSubmit()" class="">
+<form (ngSubmit)="newUser()" [formGroup]="signUp" class="">
   <label for='firstName'>First Name:</label>
-  <input type="text" class="" id="firstName" placeholder="First name.." required>
+  <input type="text" [formControl]="firstName" class="" id="firstName" placeholder="First name.." required>
   <label for='lastName'>Last Name:</label>
-  <input type="text" class="" id="lastName" placeholder="Last name.." required>
+  <input type="text" [formControl]="lastName" class="" id="lastName" placeholder="Last name.." required>
   <label for='email'>Email:</label>
-  <input type="text" class="" id="email" placeholder="Your Email.." required>
+  <input type="text" [formControl]="email" class="" id="email" placeholder="Your Email.." required>
   <label for='password'>Password:</label>
-  <input type="password" class="" id="password" placeholder="Choose a password.." required>
+  <input type="password" [formControl]="password" class="" id="password" placeholder="Choose a password.." required>
   <button class="" type="submit">Submit</button>
 </form>
