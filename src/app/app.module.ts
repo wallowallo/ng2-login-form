@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { SignUpComponent } from './app.component';
 import { LogInComponent } from './log-in/log-in.component';
 
+
+
 @NgModule({
   declarations: [
     SignUpComponent,
@@ -15,7 +17,7 @@ import { LogInComponent } from './log-in/log-in.component';
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
   providers: [],
   bootstrap: [SignUpComponent]
